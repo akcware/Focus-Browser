@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Browser</title>
+    <link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/semantic/components/icon.min.css">
+
+
+</head>
+
+<body>
+    <div id="title-bar">
+        <div class="ui three column grid">
+            <div class="four wide column">
+                <div id="goLeftRight" class="ui icon buttons">
+                    <button id="back" class="ui inverted blue basic button">
+                        <i class="chevron left icon"></i>
+                    </button>
+                    <button id="forward" class="ui inverted blue basic button">
+                        <i class="chevron right icon"></i>
+                    </button>
+                    <button id="refresh" class="ui inverted green basic button">
+                        <i class="redo icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui inverted input url-div">
+                    <input type="text" placeholder="Search..." id="url">
+                </div>
+            </div>
+            <div class="four wide column">
+                <div id="title-bar-btns" class="ui icon buttons">
+                    <button id="min-btn" class="ui inverted basic button">
+                        <i class="window minimize icon"></i>
+                    </button>
+                    <button id="max-btn" class="ui inverted basic button">
+                        <i class="window maximize outline icon"></i>
+                    </button>
+                    <button id="close-btn" class="ui inverted red basic button">
+                        <i class="close icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offline" id="offline">
+        <img src="assets/img/logo.png" width="150">
+        <br>
+        <h1>No Connection</h1>
+        <br>
+        <p>We want focused people. Not dino.</p>
+        <i id="errName"></i>
+    </div>
+
+
+    <webview id="webview" class="webview" src="https://www.duckduckgo.com/" preload="assets/js/preload.js"></webview>
+
+
+    <script src="assets/js/titlebar.js"></script>
+    <script src="assets/js/renderer.js"></script>
+    <scr ipt src="assets/js/jquery-3.4.1.min.js">
+    </script>
+    <script src="assets/semantic/semantic.min.js"></script>
+</body>
+
+</html>

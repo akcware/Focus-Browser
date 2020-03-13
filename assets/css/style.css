@@ -1,0 +1,82 @@
+::-webkit-scrollbar {
+    background-color: #fff;
+    width: .8em
+}
+
+::-webkit-scrollbar-thumb:window-inactive, ::-webkit-scrollbar-thumb {
+    background: black
+}
+
+body {
+    background-color: #202020;
+}
+
+#title-bar {
+    -webkit-app-region: drag;
+    height: 50px;
+    width: 100%;
+    background-color: #252525;
+    color: grey;
+    padding: none;
+    position: fixed;
+    margin: 0px;
+    top: 0px;
+}
+
+#title {
+    position: fixed;
+    top: 13px;
+    left: 10px;
+    color: white;
+}
+
+#title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 0px;
+    right: 6px;
+}
+
+#goLeftRight {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 0px;
+    left: 30px;
+}
+
+#url {
+    background-color: #505050;
+    color: white;
+    text-align: center;
+}
+
+.url-div {
+    width: 100%;
+}
+
+.url-div input {
+    top: 0px;
+    -webkit-app-region: no-drag;
+}
+
+.webview {
+    display: inline-flex;
+    margin-top: 50px;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.offline {
+    margin-top: 50px;
+    display: none;
+    text-align: center;
+    width: 100%;
+    color: grey;
+    margin: 100px auto;
+}
+
+.offline h1, p, span {
+    text-align: center !important;
+    width: 100%;
+    margin: auto;
+}
