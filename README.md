@@ -23,3 +23,5 @@ If you have git:
 If you don't have git, just download as zip and extract it. And run this command: *npm install*
 
 To run app, you can run this command in your terminal: "npm start"
+
+Or if you want to just install and run and you're using Windows, you can download in Sourceforge: https://sourceforge.net/projects/focus-browser/
